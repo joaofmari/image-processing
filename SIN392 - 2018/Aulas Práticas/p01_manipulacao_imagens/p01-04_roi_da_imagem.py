@@ -31,7 +31,7 @@ axis = plt.gca()
 axis.add_patch(Rectangle((200,200), 20, 20, facecolor='none', edgecolor='red'))
 plt.title('RdI destacado na imagem')
 # Mostra as figuras na tela
-plt.show() 
+### plt.show() 
 
 # Cria uma nova figura
 plt.figure() 

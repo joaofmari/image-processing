@@ -18,8 +18,8 @@ from scipy import misc, ndimage
 import matplotlib.pyplot as plt
 
 # Lê as imagens a partir de arquivos
-im_l = misc.imread('../data/dip_3ed/angiography_live_image.tif')
-im_m = misc.imread('../data/dip_3ed/angiography_mask_image.tif')
+im_l = misc.imread('../data/dip_3ed/ch03/angiography_live_image.tif')
+im_m = misc.imread('../data/dip_3ed/ch03/angiography_mask_image.tif')
 
 # Subtrai imagem máscara da imagem ativa.
 im_sub = im_l.astype(np.float) - im_m.astype(np.float)

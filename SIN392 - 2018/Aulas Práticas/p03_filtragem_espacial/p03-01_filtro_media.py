@@ -30,25 +30,25 @@ im = img_as_float(im)
 masc3 = np.array([[1./9, 1./9, 1./9],
                   [1./9, 1./9, 1./9],
                   [1./9, 1./9, 1./9]], dtype=float)
-print masc3                
+print(masc3)                
 
 # Mascara da media 5x5.
 # Preenchendo o arranjo usando função do NumPy.
 masc5 = np.ones([5,5], dtype=float)
 masc5 = masc5 / 25.
-print masc5
+print(masc5)
 # Mascara da media 9x9
 masc9 = np.ones([9,9], dtype=float)
 masc9 = masc9 / 81.
-print masc9
+print(masc9)
 # Mascara da media 9x9
 masc11 = np.ones([11,11], dtype=float)
 masc11 = masc11 / 121.
-print masc11
+print(masc11)
 # Mascara da media 9x9
 masc25 = np.ones([25,25], dtype=float)
 masc25 = masc25 / 625.
-print masc25
+print(masc25)
 
 # Realiza as filtragens usando convolução.
 # ----------------------------------------

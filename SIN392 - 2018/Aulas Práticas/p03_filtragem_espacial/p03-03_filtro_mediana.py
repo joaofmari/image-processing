@@ -22,7 +22,8 @@ import matplotlib.pyplot as plt
 # Carrega a imagem
 im = misc.ascent()
 
-#im = misc.imread('../data/dip_3ed/ckt_board_saltpep_prob_pt05.tif')
+# Descomentar esta linha para testar uma imagem com ruído sal e pimenta.
+# im = misc.imread('../data/dip_3ed/ch03/ckt_board_saltpep_prob_pt05.tif')
 
 # Converte a o tipo de dado da imagem para float [0..1]
 im = img_as_float(im)
@@ -30,7 +31,7 @@ im = img_as_float(im)
 # Aplica filtragem pela mediana. Não é realizada por convolução.
 # ==============================================================
 
-# Padding por espelhamento.
+# Padding por espelhamento (padrão do scipy).
 # -------------------------
 # Aplica o filtro da mediana com mascara 3x3.
 mediana_3x3 = filters.median_filter(im, size=3)
